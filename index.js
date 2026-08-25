@@ -49,8 +49,43 @@
 
 // loginHandler("shivkamal01", "123456", login)
 
-console.log("one")
-for(i=0; i<10000; i++){
-    console.log("i=" + i)
+// console.log("one")
+// for(i=0; i<10000; i++){
+//     console.log("i=" + i)
+// }
+// console.log("three")
+
+const container = document.getElementById('container'); // it is function of dom
+const button = document.getElementById('btn');
+
+const h1 = document.createElement('h1');
+console.log(h1)
+h1.innerText = 'Abes Eng College';
+// console.log(button)
+// console.log(container)
+const loader=document.createElement('h2');
+container.appendChild(loader);
+const img=document.createElement('img');
+
+function ping() {
+    // alert('server ping')
+    try{
+    loader.innerHTML='<h2>Loading data....</h2>'
+    container.innerHTML = '<h2>welcome to dom<h2>'
+    h1.style.backgroundColor='cyan';
+    h1.style.color='red';
+    container.appendChild(h1);
+    img.src="https://png.pngtree.com/png-clipart/20240321/original/pngtree-avatar-job-student-flat-portrait-of-man-png-image_14639684.png";
+    img.setAttribute('height',200);
+    img.setAttribute('width',200);
+    container.appendChild(img);
+    }
+    catch(e){
+        loader.innerHTML='<h2>style=color:red> Error in loading Data</h2>'
+    }
+    finally{
+        
+    }
 }
-console.log("three")
+
+button.addEventListener('click', ping);
