@@ -84,7 +84,7 @@ function ping() {
         loader.innerHTML='<h2>style=color:red> Error in loading Data</h2>'
     }
     finally{
-        
+        container.removeChild(loader);
     }
 }
 
