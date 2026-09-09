@@ -1,4 +1,4 @@
-const root= document.getElementById('container');
+const root= document.getElementById('container'); //DOM ka function hai
 const button= document.getElementById('btn');
 const display= document.getElementById('disp');
 const loader= document.getElementById('loader');
@@ -12,6 +12,8 @@ async function fetchData(){
         const jsonData= await serverData.json();
         // console.log(jsonData[0].title);
         // display.innerHTML=`${jsonData[0].title}`;
+
+        // ${} --> Template strings hai
 
 
         let table=`<table border=2px>
