@@ -5,6 +5,8 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import ICard from './components/ICard'
 import ICardGallery from './components/ICardGallery'
+import MyState from './components/MyState'
+import ColorChange from './components/ColorChange'
 
 function App() {
   
@@ -13,7 +15,9 @@ function App() {
     <>
      <div style={{border:'2px solid red', width:'300px', height:'100%'}}>
       <h2>Abes Engineering College</h2>
-      <ICardGallery></ICardGallery>
+      {/* <ICardGallery></ICardGallery> */}
+      {/* <MyState></MyState> */}
+      <ColorChange></ColorChange>
       
       </div>
     </>
